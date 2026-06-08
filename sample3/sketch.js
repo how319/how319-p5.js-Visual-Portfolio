@@ -12,7 +12,7 @@ let humming = false; // humming: 음표 및 미소 효과
 let wind = false; // wind: 머리카락 및 이어폰 줄 흔들림 효과
 
 function setup() {
-  createCanvas(400, 600);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -197,4 +197,8 @@ function keyPressed() {
   // S(s) 키: 10초 동안 GIF 저장
   if (key === 's' || key === 'S')
     saveGif('과제 3_20250301 신현지', 10)
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
