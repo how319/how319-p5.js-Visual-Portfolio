@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(400, 600);
 }
 
 function draw() {
@@ -120,8 +120,4 @@ function draw() {
   line(-41.14, 56.63, 0, 0);
   line(-66.57, -21.63, 0, 0);
   pop();
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
