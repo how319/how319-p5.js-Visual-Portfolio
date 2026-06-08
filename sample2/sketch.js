@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(600, 450);
 }
 
 function draw() {
@@ -97,8 +97,4 @@ function draw() {
   arc(60, 244, 31, 28, radians(180), radians(110));
   quad(356, 244, 339, 234, 339, 280, 350, 282); // R
   arc(340, 244, 31, 28, radians(70), radians(0));
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
