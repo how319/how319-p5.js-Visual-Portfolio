@@ -88,7 +88,3 @@ function draw() {
   line(453.86, 168.63, 495, 112);
   line(428.43, 90.37, 495, 112);
 }
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
