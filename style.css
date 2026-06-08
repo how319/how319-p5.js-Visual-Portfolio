@@ -5,32 +5,31 @@ body {
   padding: 40px;
   background: #cceeff;
   display: flex; flex-direction: column; align-items: center;
+  position: relative; overflow-x: hidden;
 }
-
-/* ... 구름 및 header 스타일은 유지 ... */
-
+.cloud { position: absolute; background: white; border-radius: 50px; opacity: 0.8; z-index: 0; }
+.cloud-1 { top: 10%; left: 5%; width: 220px; height: 90px; }
+.cloud-2 { top: 20%; right: 5%; width: 280px; height: 110px; }
+.cloud-3 { bottom: 10%; left: 15%; width: 200px; height: 80px; }
+header, #projects { position: relative; z-index: 1; }
+header { margin-bottom: 30px; }
+h1 { font-size: 2.5rem; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
 #projects {
   display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 40px; width: 100%; max-width: 1200px;
+  gap: 40px; width: 100%; max-width: 1000px;
   justify-items: center;
 }
-
 .project-card {
   background: white; padding: 15px;
-  border: 8px solid #ffffff; 
+  border: 8px solid #ffffff;
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
   width: 100%; max-width: 550px;
 }
-
 .canvas-container {
-  width: 100%; aspect-ratio: 4 / 3; 
+  width: 100%; aspect-ratio: 4 / 3;
   overflow: hidden; background: #eee;
-  position: relative; /* 중요 */
 }
-
 .canvas-container iframe {
   width: 100%; height: 100%; border: none;
-  /* 핵심: 작품을 꽉 차게 보이게 하는 설정 */
-  transform: scale(1.5); /* 1.5배 확대 */
-  transform-origin: center center; /* 정중앙 기준 */
 }
+.label { margin-top: 15px; font-size: 1.2rem; font-weight: 800; text-align: center; color: #333; }
